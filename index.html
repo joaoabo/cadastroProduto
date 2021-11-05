@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <title>cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2? família = Nunito + Sans: ital, wght @ 0,700; 1.400 & display = swap "rel =" stylesheet ">
+</head>
+<body>
+    <header>
+        <h1>Minha Loja de Doces</h1>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>Produtos</h2>
+            <span>Lista de Doces da minha Loja.</span>
+        </div>
+
+        <div class="card">
+            <div class="lineInput">
+                <label>Cadastro de Produtos</label>
+                <input type="text" id="produto" placeholder="produto">
+            </div>
+
+            <div class="lineInput">
+                <label>Preco</label>
+                <input type="text" id="preco" placeholder="Preco">
+            </div>
+
+            <button onclick="Produto.salvar()"> Salvar </button>
+
+            <button onclick="Produto.cancelar()"> Cancelar </button>   
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th>produto</th>
+                    <th>valor</th>
+                    <th class="center"> Ações </th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="script/scripts.js"></script>    
+</body>
+</html>
