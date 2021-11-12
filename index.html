@@ -23,7 +23,7 @@
 
         <div class="card">
             <div class="lineInput">
-                <label>Cadastro de Produtos</label>
+                <label>Produtos</label>
                 <input type="text" id="produto" placeholder="produto">
             </div>
 
@@ -32,26 +32,36 @@
                 <input type="text" id="preco" placeholder="Preco">
             </div>
 
-            <button onclick="Produto.salvar()"> Salvar </button>
-
-            <button onclick="Produto.cancelar()"> Cancelar </button>   
+            <button onclick="produto.salvar()">Salvar</button>
+            <button onclick="produto.cancelar()">Cancelar</button>   
         </div>
 
         <div class="content">
             <table border="1">
                 <thead>
                     <th class="center">ID</th>
-                    <th>produto</th>
-                    <th>valor</th>
-                    <th class="center"> Ações </th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th class="center">Ações</th>
                 </thead>
                 <tbody id="tbody">
-
+<!--Abaixo será oque a função do js ira realizar ao ser acionado, cada "salvar" sera adicionado um tr como
+linhas e "tds" para colunas. o Codigo abaixo é um exemplo. -->
+<!--               
+                    <tr>
+                        <td>1</td>
+                        <td>Mesa da sala</td>
+                        <td>1900</td>
+                        <td class="center">
+                            <img src="images/editar.png" alt="">
+                            <img src="images/excluir.png" alt="">
+                        </td>
+                    </tr>                  
+-->                 
                 </tbody>
             </table>
         </div>
     </main>
-    <script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="script/scripts.js"></script>    
+    <script type="text/javascript" src="script/script.js"></script>    
 </body>
 </html>
